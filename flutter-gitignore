@@ -1,14 +1,10 @@
 # Flutter/Dart/Pub related
 **/doc/api/
 .dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.fvm/
 .packages
 .pub-cache/
 .pub/
 build/
-coverage/
 lib/generated_plugin_registrant.dart
 flutter_export_environment.sh
 linked_*.ds
@@ -19,6 +15,9 @@ unlinked_spec.ds
 # Regenerating the pubspec.lock file lets you test your package against the latest compatible versions of its dependencies.
 # See https://dart.dev/guides/libraries/private-files#pubspeclock
 #pubspec.lock
+
+# If you're building an application, you may want to check-in your pubspec.lock
+pubspec.lock
 
 # Environment files
 .env
@@ -35,6 +34,7 @@ unlinked_spec.ds
 gradle-wrapper.jar
 .gradle
 keystore.properties
+local.properties
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
@@ -63,13 +63,7 @@ keystore.properties
 **/ios/Flutter/flutter_assets/
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
-
-# Exceptions to above rules.
-!**/ios/**/default.mode1v3
-!**/ios/**/default.mode2v3
-!**/ios/**/default.pbxuser
-!**/ios/**/default.perspectivev3
-!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+*.xcworkspace
 
 # Firebase related
 .firebase/
@@ -92,15 +86,13 @@ bin/
 captures/
 flutter_*.png
 version
+.uuid
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
+# IDE related
 .idea/
-
-# Visual Studio Code related
+*.iml
 .vscode/
+.local/
 
 # Visual Studio related
 .vs/
@@ -109,3 +101,31 @@ version
 .classpath
 .project
 **/.settings/
+
+# Sqflite example related
+/sqflite/example/.flutter-plugins-dependencies
+
+# Pods and iOS specific
+Podfile
+Podfile.lock
+Pods/
+.symlinks/
+**/Flutter/App.framework/
+**/Flutter/Flutter.framework/
+**/Flutter/Generated.xcconfig
+**/Flutter/flutter_assets/
+ServiceDefinitions.json
+xcuserdata/
+*.xcworkspace
+**/DerivedData/
+
+# Generated files
+GeneratedPluginRegistrant.h
+GeneratedPluginRegistrant.m
+GeneratedPluginRegistrant.java
+.flutter-plugins
+
+# Overrides and temporary files
+pubspec_overrides.yaml
+_pubspec_overrides.yaml
+*.tmp
