@@ -10,6 +10,11 @@
 build/
 coverage/
 lib/generated_plugin_registrant.dart
+flutter_export_environment.sh
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+
 # For library packages, don’t commit the pubspec.lock file.
 # Regenerating the pubspec.lock file lets you test your package against the latest compatible versions of its dependencies.
 # See https://dart.dev/guides/libraries/private-files#pubspeclock
@@ -27,6 +32,9 @@ lib/generated_plugin_registrant.dart
 **/android/key.properties
 **/android/local.properties
 **/android/**/GeneratedPluginRegistrant.java
+gradle-wrapper.jar
+.gradle
+keystore.properties
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
@@ -53,7 +61,6 @@ lib/generated_plugin_registrant.dart
 **/ios/Flutter/app.flx
 **/ios/Flutter/app.zip
 **/ios/Flutter/flutter_assets/
-**/ios/Flutter/flutter_export_environment.sh
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
@@ -62,10 +69,43 @@ lib/generated_plugin_registrant.dart
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
-!/packages/flutter_tools/test/data/dart_dependencies_test/**
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
-# Ignore IntelliJ IDEA project files
+# Firebase related
+.firebase/
+.firebaserc
+firebase.json
+
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.project
+.svn/
+bin/
+captures/
+flutter_*.png
+version
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
 .idea/
 
-# Ignore macOS system files
-.DS_Store
+# Visual Studio Code related
+.vscode/
+
+# Visual Studio related
+.vs/
+
+# Android Studio related
+.classpath
+.project
+**/.settings/
