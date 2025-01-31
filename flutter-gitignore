@@ -1,3 +1,21 @@
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.project
+.svn/
+bin/
+captures/
+flutter_*.png
+version
+.uuid
+
 # Flutter/Dart/Pub related
 **/doc/api/
 .dart_tool/
@@ -70,24 +88,6 @@ local.properties
 .firebase/
 .firebaserc
 firebase.json
-
-# Miscellaneous
-*.class
-*.lock
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.project
-.svn/
-bin/
-captures/
-flutter_*.png
-version
-.uuid
 
 # IDE related
 .idea/
