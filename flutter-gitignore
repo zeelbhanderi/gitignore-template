@@ -116,7 +116,6 @@ Thumbs.db
 
 # Android Studio related
 .classpath
-.project
 **/.settings/
 
 # Sqflite example related
@@ -133,7 +132,6 @@ Pods/
 **/Flutter/flutter_assets/
 ServiceDefinitions.json
 xcuserdata/
-*.xcworkspace
 **/DerivedData/
 
 # Generated files
