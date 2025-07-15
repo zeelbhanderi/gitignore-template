@@ -122,8 +122,6 @@ Thumbs.db
 /sqflite/example/.flutter-plugins-dependencies
 
 # Pods and iOS specific
-Podfile
-Podfile.lock
 Pods/
 .symlinks/
 **/Flutter/App.framework/
